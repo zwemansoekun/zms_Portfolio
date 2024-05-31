@@ -1,305 +1,414 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Zwe Man Soe Portfolio Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-</head>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Zwe Man Soe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>  
-        </div>
-    </nav>
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head> 
 
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Zwe Man Soe</h2>
-                <p class="hero_desc">I am a Software Developer</p>
-            </div>
-            </div>
-        </div>
-    </section>
+<body> 
+	<!-- Navbar header section -->
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="logo"> 
+				<h2 class="logo-heading"><a href="./">Zwe Man Soe</a></h2> 
+			</div> 		
+			<div class="menu"> 
+				<ul class="menu-list"> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#home"> 
+							Home 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#skill"> 
+							Skill
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							About 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#experience"> 
+							Experience 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							Contact Me 
+						</a> 
+					</li> 
+				</ul> 
+			</div> 
+		</nav> 
+	</header> 
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about.jpg" class= "imageAboutPage" alt="">
-                </div>
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+                <h1 class="my-heading">Zwe Man Soe</h1> 			
+				<h3 class="greet-heading">Web Development</h3> 				
+				<h4 class="sub-heading"> 
+					A Software Engineer with 9+ years of Experience. 
+				</h4> 
+			</div> 
+			<div class="intro-buttons"> 
+				<a class="btn ghost-btn" id="get_engcv">Get CV(ENG)</a> 
+				<a class="btn ghost-btn" id="get_jpcv">Get CV(JP)</a> 
+			</div> 
+			<div class="intro-buttons"> 
+				<a class="btn common-btn" href="#contact">Hire Me</a> 				
+			</div> 
+		</div> 
+	</section> 
 
-                <div class="col-lg-8">
-                    <p> I studied Petroleum Engineering at West Yangon Technology University but left the school in the second year of the B.Tech program, receiving only an A.G.T.I Diploma. There was no IT training at the university.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Zwe Man Soe</li>
-                                <li>Age: 33</li>
-                                <li>Occupation: Web Developer</li>
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="skill"> 
+		<div class="portfolio-heading"> 
+			<h1 class="my-heading text-center">Skill</h1> 
+		</div> 
+		<div class="portfolio-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/php.svg"
+								alt="Languages"> 
+						</div> 
+						<h3 class="greet-heading blue-text">Languages</h3> 
+						<p class="small-para blue-text">PHP, JS, HTML, CSS</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/laravel.svg"
+								alt="Framework"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Framework
+						</h3> 
+						<p class="small-para blue-text">Laravel, Flutter, React, Phalcon, Vue, jQuery, Smarty,</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/sql.svg" alt="Database"> 
+						</div> 
+						<h3 class="greet-heading blue-text">Database</h3> 
+						<p class="small-para blue-text">PostgresSQL, MySQL, MongoDB</p> 
+					</div> 
+				</div> 
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/visual.svg"
+								alt="IDE/Editor "> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							IDE/Editor 
+						</h3> 
+						<p class="small-para blue-text">Visual, Sublime, Eclipse, Netbean</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/gitlab.svg"
+								alt="Other Tools"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Other Tools
+						</h3> 
+						<p class="small-para blue-text"> 
+							Git, Docker, Postman, Excel, XAMPP
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card port-card"> 
+						<div class="image"> 
+							<img src="./images/unit.svg"
+								alt="Developement Phases"> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Developement Phases
+						</h3> 
+						<p class="small-para blue-text">Implementation, Unit/Integration Test</p> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
 
-                            </ul>
-                        </div>                        
-                    </div>
-                    <div class="row mt-3">
-                        <p> I learned programming at G-Next Myanmar Company, a branch of a Japanese company, and worked in the Android department there for about a year and a half. Afterward, I served as a PHP developer at Operation Partners Myanmar Company, a branch office of a Japanese company, for approximately 4 and a half years. Following that, I took on the role of Flutter Team Leader at Management Partners Myanmar Company, a branch of a Japanese company. In my latest position, I joined CGM Golden Land Company, also a branch of a Japanese company, as a BSE. I primarily functioned as an Admin Team Leader and Marketing Leader in the office.
+	<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About Me</h1> 
+			<p class="lead-para"> 
+				I studied Petroleum Engineering at West Yangon Technology University but left the school in the second year of the B.Tech, receiving only an A.G.T.I Diploma. There was no IT training at the university.
+            </p> 			
+            <p> 
+                I learned programming at G-Next Myanmar Company, a branch of a Japanese company, and worked in the Android department there for about a year and a half. Afterward, I served as a PHP developer at Operation Partners Myanmar Company, a branch office of a Japanese company, for approximately 4 and a half years. Following that, I took on the role of Flutter Team Leader at Management Partners Myanmar Company, a branch of a Japanese company. In my latest position, I joined CGM Golden Land Company, also a branch of a Japanese company, as a BSE. I primarily functioned as an Admin Team Leader and Marketing Leader in the office. Furthermore, I have successfully passed the N2 level of the Nat-Test Japanese language exam.
+            </p>
+		</div> 
+		<div class="about-image"> 
+			<img src="./images/about.jpg" alt="About Image"> 
+		</div> 
+	</section> 
 
-                            Furthermore, I have successfully passed the N2 level of the Nat-Test Japanese language exam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
+	<!-- Services Section -->
+	<section class="services" id="experience"> 
+		<div class="services-heading"> 
+			<h1 class="my-heading text-center">Project Experience</h1> 
+		</div> 
+		<div class="services-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">学ぶ日本語 Android Mobile アプリ</h3> 
+						<p class="small-para"> 
+							Java, Jenny Motion, Android Studio
+						</p> 						
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Bird Donation ゲーム Unity
+						</h3> 
+						<p class="small-para"> 
+							C#, Unity, MySQL
+						</p> 
+					</div> 
+				</div> 
+                <div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">求人ウェブサイト</h3> 
+						<p class="small-para"> 
+							Phalcon, jQuery, MySQL, git, bootstrap
+						</p> 
+					</div> 
+				</div> 				
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							結婚式 WEBアプリケーションシステム
+						</h3> 
+						<p class="small-para"> 
+                            PHP, Smarty, Backbone Js, MySQL, bootstrap
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							レストランガイド
+						</h3> 
+                        <p class="small-para"> 
+							Laravel, MySQL, bootstrap, JS 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Oritz Gift Service
+						</h3> 
+						<p class="small-para"> 
+                            PHP, PostgresSQL, JS
+						</p> 
+					</div> 
+				</div> 
+			</div> 
+            <div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Taxi serviceシステム
+						</h3> 
+						<p class="small-para"> 
+                            Pure PHP, Smarty, PostgresSQL, js
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							葬式システム 
+						</h3> 
+                        <p class="small-para"> 
+							PHP, PostgresSQL, JS 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							社内出席システム
+						</h3> 
+						<p class="small-para"> 
+                            Laravel, docker, MySQL, JS
+						</p> 
+					</div> 
+				</div> 
+			</div>
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							ニュースアプリシステム
+						</h3> 
+						<p class="small-para"> 
+                            Flutter, dart
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Customer Management System
+						</h3> 
+						<p class="small-para"> 
+                            Laravel, docker, MySQL, js
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Pokemon Project
+						</h3> 
+						<p class="small-para"> 
+                            Laravel, MySQL, js
+						</p> 
+					</div> 
+				</div> 
+			</div>
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							School Management System
+						</h3> 
+						<p class="small-para"> 
+                            Laravel, MySQL, js
+						</p> 
+					</div> 
+				</div> 	
+                <div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Admin, Network & Marketing
+						</h3> 
+						<p class="small-para"> 
+                            I primarily functioned as an Admin Team Leader and Marketing Leader in the office. 
+						</p> 
+					</div> 
+				</div> 	
+			</div> 
+		</div> 
+	</section> 
 
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
+	<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<h1 class="my-heading text-center">Contact</h1> 
+		</div> 
+		<div class="contact-content"> 			
+			<div class="contact-details my-contact"> 				
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">zwemansoe6@gmail.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+95 9 799 591 006</p> 
+				</div> 
+                <div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">Yangon, Myanmar</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+	<!-- Footer section -->
+	<footer class="footer"> 
+		<div class="footer-content text-center"> 
+			<h4> 
+				Copyright © <script>document.write( new Date().getFullYear() );</script> All rights reserved.
+			</h4> 
+        </div>        
+	</footer> 
 
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">                
-
-                <div class="col-lg-4 offset-lg-4">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-     <!-- footer section-->
-     <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
-
-      <!-- load javascript after loading all html content -->
-      <script src="script/script.js"></script>
-
-
-</body>
-
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+		integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script> 
+	<script src="script.js"></script> 
+</body> 
 </html>
